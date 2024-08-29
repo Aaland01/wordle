@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stage 3</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style3.css" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <span class="dot"> 
+    <a href="../index.html"> 1 </a>
+    </span>
+    <span class="dot"> 
+    <a href="../stage2/stage2.html"> 2 </a>
+    </span>
+  </div>
+
+  <h1> WordGuess </h1>
+
+  <p> Antall gjett: <br>
+    <span id="counter"> 
+      0 
+    </span> gjetninger 
+  </p>
+
+  <div id="container">
+    <div id="message"> </div>
+    <input class="letter" id="1" maxlength="1" oninput="capitalize(1);next(1)">  
+    <input class="letter" id="2" maxlength="1" oninput="capitalize(2);next(2)"> 
+    <input class="letter" id="3" maxlength="1" oninput="capitalize(3);next(3)"> 
+    <input class="letter" id="4" maxlength="1" oninput="capitalize(4);next(4)"> 
+    <input class="letter" id="5" maxlength="1" oninput="capitalize(5);next(5)"> 
+    <br>
+    <button class="inputButtons" onClick="checkGuess()">Guess</button>
+    <button class="inputButtons" onClick="clearInput()">Clear</button>
+    <div id="output"> </div>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>

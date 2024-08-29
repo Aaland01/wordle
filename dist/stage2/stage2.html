@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wordle stage 2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style2.css" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <span class="dot"> 
+    <a href="../index.html"> 1 </a>
+    </span>
+    <span class="dot"> 
+    <a href="../stage3/stage3.html"> 3 </a>
+    </span>
+  </div>
+
+  <h1> WordGuess </h1>
+
+  <div id="container"> 
+    <input class="letter" id="1" maxlength="1" oninput="capitalize(1)">
+    <input class="letter" id="2" maxlength="1" oninput="capitalize(2)">
+    <input class="letter" id="3" maxlength="1" oninput="capitalize(3)">
+    <input class="letter" id="4" maxlength="1" oninput="capitalize(4)">
+    <input class="letter" id="5" maxlength="1" oninput="capitalize(5)">
+
+    <button onClick="check()">Guess</button>
+
+    <div id="output"> 
+
+    </div>
+    
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
